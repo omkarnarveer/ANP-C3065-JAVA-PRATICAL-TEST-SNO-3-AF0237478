@@ -44,7 +44,12 @@ public class ProductView{
 			System.out.println(prodArr5[j].getProductPrice());
 			}
 		}
-			prodService.getAllProducts();		
+		Product prodArr6[]=prodService.getAllProducts();
+		
+			for(Product p:prodArr6) {
+				
+			 System.out.println(p.getProductId()+" "+p.getProductName()+" "+p.getProductPrice());	
+			}
 	}		
 }
 
