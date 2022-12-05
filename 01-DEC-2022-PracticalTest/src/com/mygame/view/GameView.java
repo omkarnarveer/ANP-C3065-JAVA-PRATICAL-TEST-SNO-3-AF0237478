@@ -5,7 +5,6 @@ public class GameView {
 	int randomNumberArr[]=new int[10];
 	public String[] displayCityNamesWithBlanks(){
 
-		GameView viewObj=new GameView();
 		GameService serviceObj=new GameService();
 		String[] cityName=serviceObj.getCityNameService();
 		
