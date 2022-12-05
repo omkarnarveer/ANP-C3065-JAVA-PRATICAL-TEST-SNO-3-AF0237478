@@ -4,6 +4,6 @@ public class GameDAO {
 	
 	public String[] getCityNames(){
 		
-	    return cityName; 
+	return cityName; 
 	}
 }

@@ -9,13 +9,13 @@ public class Main {
 		String name[] = viewObj.displayCityNamesWithBlanks();
 		
 		for(int i = 0 ; i <5 ; i++) {
-			
+			String strName= String.valueOf(name[i]);
 			System.out.println('\n'+name[i]);
 			System.out.println("Guess the Name of the City: ");
 			java.util.Scanner scanner=new java.util.Scanner(System.in);
 			String city=scanner.nextLine();
 			
-			if (city==name[i]){
+			if (city==strName){
 				
 				System.out.println("Correct Guess.");
 			}
