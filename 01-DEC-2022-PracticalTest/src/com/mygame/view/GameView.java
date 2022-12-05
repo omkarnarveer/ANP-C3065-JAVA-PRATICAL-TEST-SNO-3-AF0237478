@@ -1,4 +1,5 @@
 package com.mygame.view;
+import java.lang.Math;
 import com.mygame.service.*;
 public class GameView {
 	
@@ -17,6 +18,7 @@ public class GameView {
 		}
 		
 	}
+	static String cityNameWithBlanks[]=new String[5];
 	public String[] displayCityNamesWithBlanks(){
 
 		GameService serviceObj=new GameService();
@@ -38,8 +40,11 @@ public class GameView {
 					cityNameCharArr[j]='-';		
 				}
 			}
+			String newCityName=new String(cityNameCharArr);
+			cityNameWithBlanks[i]=newCityName;
+			//System.out.println(cityNameWithBlanks[i]);
 		}
 		
-	return cityName;
+	return cityNameWithBlanks;
 	}
 }
