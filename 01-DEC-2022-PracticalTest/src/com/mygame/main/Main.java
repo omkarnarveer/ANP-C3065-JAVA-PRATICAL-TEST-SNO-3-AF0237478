@@ -11,7 +11,6 @@ public class Main {
 		GameService serviceObj = new GameService();
 		String name[] = viewObj.displayCityNamesWithBlanks();
 		String cityName[] = serviceObj.getCityNameService();
-		
 		for(int i = 0 ; i <5 ; i++) {
 			String strName=String.valueOf(cityName[i]);
 			//System.out.println(strName);
@@ -20,7 +19,7 @@ public class Main {
 			Scanner scanner=new Scanner(System.in);
 			String city=scanner.nextLine();
 			
-			if (city==strName){
+			if (city.equals(strName)){
 				
 				System.out.println("Correct Guess.");
 			}
@@ -31,5 +30,5 @@ public class Main {
 				System.out.println("Correct Name of the City is: "+cityName[i]);
 			}
 		}		
-	}	
+	}
 }
