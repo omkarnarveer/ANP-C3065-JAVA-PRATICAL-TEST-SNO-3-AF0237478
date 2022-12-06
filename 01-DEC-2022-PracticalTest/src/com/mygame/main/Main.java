@@ -1,6 +1,6 @@
 package com.mygame.main;
 import com.mygame.view.*;
-import com.mygame.service.*;
+import com.mygame.dao.*;
 import java.util.Scanner;
 
 public class Main {
@@ -8,9 +8,9 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		GameView viewObj = new GameView();
-		GameService serviceObj = new GameService();
+		GameDAO gameDAO = new GameDAO();
 		String name[] = viewObj.displayCityNamesWithBlanks();
-		String cityName[] = serviceObj.getCityNameService();
+		String cityName[] = gameDAO.getCityNames();
 		for(int i = 0 ; i <5 ; i++) {
 			String strName=String.valueOf(cityName[i]);
 			//System.out.println(strName);
