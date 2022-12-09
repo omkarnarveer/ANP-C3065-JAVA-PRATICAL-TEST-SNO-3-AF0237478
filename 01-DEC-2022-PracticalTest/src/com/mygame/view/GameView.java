@@ -45,6 +45,6 @@ public class GameView {
 			//System.out.println(cityNameWithBlanks[i]);
 		}
 		
-	return cityNameWithBlanks; 
+	return cityNameWithBlanks;
 	}
 }

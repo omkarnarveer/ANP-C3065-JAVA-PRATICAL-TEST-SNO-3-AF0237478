@@ -1,6 +1,6 @@
 package com.mygame.main;
 import com.mygame.view.*;
-import com.mygame.dao.*;
+import com.mygame.service.*;
 import java.util.Scanner;
 
 public class Main {
@@ -8,9 +8,10 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		GameView viewObj = new GameView();
-		GameDAO gameDAO = new GameDAO();
+		GameService serviceObj = new GameService();
 		String name[] = viewObj.displayCityNamesWithBlanks();
-		String cityName[] = gameDAO.getCityNames();
+		String cityName[] = serviceObj.getCityNameService();
+		
 		for(int i = 0 ; i <5 ; i++) {
 			String strName=String.valueOf(cityName[i]);
 			//System.out.println(strName);
@@ -30,5 +31,5 @@ public class Main {
 				System.out.println("Correct Name of the City is: "+cityName[i]);
 			}
 		}		
-	}
+	}	
 }
